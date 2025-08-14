@@ -1,0 +1,1 @@
+# nodejs-minimal-template
