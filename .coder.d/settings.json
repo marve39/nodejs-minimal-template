@@ -1,0 +1,9 @@
+{
+  "coder.portForwarding": {
+    "3000": {
+      "name": "Hello World App",
+      "scheme": "http",
+      "icon": "globe"
+    }
+  }
+}

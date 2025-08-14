@@ -1,0 +1,23 @@
+{
+  "name": "Node.js Hello World",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-vscode.vscode-typescript-next"
+      ]
+    }
+  },
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "App",
+      "onAutoForward": "openBrowser",
+      "visibility": "public"
+    }
+  },
+  "onCreateCommand": "npm install",
+  "postAttachCommand": "npm start"
+}
