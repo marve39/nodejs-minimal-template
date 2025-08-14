@@ -10,6 +10,7 @@
       ]
     }
   },
+  "appPort": ["3000:3000"],
   "forwardPorts": [3000],
   "portsAttributes": {
     "3000": {
