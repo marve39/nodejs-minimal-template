@@ -15,10 +15,10 @@
     //   "ppa": true
     // },
     // Include code-server feature as per Coder.com docs
-    "ghcr.io/coder/devcontainer-features/code-server:1": {
-      "port": 13337,
-      "host": "0.0.0.0"
-    }
+    // "ghcr.io/coder/devcontainer-features/code-server:1": {
+    //   "port": 13337,
+    //   "host": "0.0.0.0"
+    // }
   },
   "customizations": {
     "vscode": {
@@ -36,7 +36,7 @@
   },
   // Use appPort for Coder.com as per docs
   // Includes standard app ports (e.g., 3000, 5173) and code-server port (13337)
-  "appPort": [3000, 5173, "13337:13337"],
+  "appPort": ["8080:3000", "13337:13337"],
   "onCreateCommand": "npm install",
   "postAttachCommand": "npm start",
   "remoteUser": "node"
